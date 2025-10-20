@@ -1,10 +1,10 @@
-# Registro de Persona con TS+SWC y Local Storage
+# Actividad Registro de Persona con TS+SWC y Local Storage
 
 ## 1 Crear interfaz persona
 
 ```ts
 export interface Person {
-  id: string;          // uuid simple para manejar eliminaciones
+  id: string;         
   rut: string;
   nombre: string;
   apellido: string;
