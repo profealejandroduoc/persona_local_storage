@@ -13,7 +13,7 @@ export interface Person {
 
 ```
 
-## 2. Create a helper to manipulate local storage
+## 2. Función que permite manipular personas
 
 ```ts
 import type { Persona } from "../interfaces/Persona";
@@ -33,3 +33,10 @@ export function savePeople(people: Persona[]): void {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(people));
 }
 ```
+
+## 3. Ahora revisa el archivo APP.tsx
+
+* Separa el archivo en componentes reutilizables.
+* Recuerda que los hooks tienen reglas, investiga que es cada Hook que está dispuesto en el código
+* Crea estilos adecuados para cada componente
+* Aplica estos conceptos en tu trabajo semestral

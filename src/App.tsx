@@ -38,7 +38,7 @@ export default function App() {
   const errors = useMemo(() => {
     const err: Partial<Record<keyof FormState, string>> = {};
     if (!form.rut.trim()) err.rut = "El RUT es obligatorio.";
-    if (form.rut.length > 1) err.rut = "RUT incompleto.";
+    if (form.rut.length < 1) err.rut = "RUT incompleto.";
     if (!form.nombre.trim()) err.nombre = "El nombre es obligatorio.";
     if (!form.apellido.trim()) err.apellido = "El apellido es obligatorio.";
     if (!form.direccion.trim()) err.direccion = "La dirección es obligatoria.";
